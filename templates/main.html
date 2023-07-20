@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Weather tracker</title>
+</head>
+<body>
+<div class="container">
+    <h1>Добро пожаловать на главную страницу!!</h1>
+    <form action="/weather" method="POST">
+        <div class="form-group">
+            {{.}}
+            
+
+            
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city" name="city" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Посмотреть Погоду</button>
+    </form>
+</div>
+    
+</body>
+</html>

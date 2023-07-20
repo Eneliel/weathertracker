@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация и аутентификация пользователей</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Аутентификация прошла успешно</h1>
+        <p>Пользователь "{{ .Username }}" аутентифицирован.</p>
+    
+    <form action="/main" method="GET">
+        <button type="submit" class="btn btn-primary">Войти</button>
+    </form>
+    </div>
+</body>
+</html>
