@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Регистрация и аутентификация пользователей</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -7,10 +7,10 @@
 <body>
     <div class="container">
         <h1>Главная страница</h1>
-        <p>Добро пожаловать!</p>
-        
+        <p>Добро пожаловать</p>
+
         <h2>Регистрация</h2>
-        <form action="/register" method="POST">
+        <form action="/regist" method="POST">
             <div class="form-group">
                 <label for="username">Имя пользователя</label>
                 <input type="text" class="form-control" id="username" name="username" required>
@@ -21,10 +21,10 @@
             </div>
             <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
         </form>
-        
+
         <h2>Аутентификация</h2>
         <form action="/login" method="POST">
-            <div class="form-group">
+           <div class="form-group">
                 <label for="username">Имя пользователя</label>
                 <input type="text" class="form-control" id="username" name="username" required>
             </div>

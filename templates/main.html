@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-    <title>Weather tracker</title>
+    <title>Weather Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-<div class="container">
-    <h1>Добро пожаловать на главную страницу!!</h1>
-    <form action="/weather" method="POST">
-        <div class="form-group">
-            {{.}}
-            
+        <div class="container">
+            <h1>Добро пожаловать на Главную страницу</h1>
+            <form action="/weather" method="POST">
+                <h2>{{.Name}}</h2>
+                <h2>{{.Main}}</h2>
 
-            
-            <label for="city">City</label>
-            <input type="text" class="form-control" id="city" name="city" required>
+                <label for="text">City</label>
+                <input type="text" class="form-control" id="city" name="city" required>
+                <button type="submit" class="btn btn-primary">Посмотреть Погоду</button>
+            </form>
         </div>
-        <button type="submit" class="btn btn-primary">Посмотреть Погоду</button>
-    </form>
-</div>
-    
 </body>
 </html>

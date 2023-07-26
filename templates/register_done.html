@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Регистрация и аутентификация пользователей</title>
+    <title>Registration Done!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
         <h1>Регистрация прошла успешно</h1>
-        <p>Пользователь "{{ . }}" зарегистрирован.</p>
+        <p>Пользователь "{{.}}" зарегистрирован</p>
 
         <form action="/main" method="GET">
-            <button type="submit" class="btn btn-primary">Войти</button>
+            <button type="submit" class="btn btn-primary">На Главную</button>
         </form>
     </div>
 </body>
